@@ -7,19 +7,19 @@ const skillsData = [
         icon: "🌐",
         skills: [
             { name: "HTML5", icon: "🌐", level: "Advanced", progress: 90 },
-            { name: "CSS3", icon: "🎨", level: "Advanced", progress: 85 },
-            { name: "JavaScript", icon: "⚡", level: "Intermediate", progress: 80 },
-            { name: "Responsive Design", icon: "📱", level: "Advanced", progress: 88 }
+            { name: "CSS3", icon: "🎨", level: "Intermediate", progress: 65 },
+            { name: "JavaScript", icon: "⚡", level: "Intermediate", progress: 50 },
+            { name: "Responsive Design", icon: "📱", level: "Intermediate", progress: 88 }
         ]
     },
     {
         title: "Backend Development",
         icon: "⚙️",
         skills: [
-            { name: "Python", icon: "🐍", level: "Advanced", progress: 88 },
-            { name: "Django", icon: "🎯", level: "Intermediate", progress: 82 },
+            { name: "Python", icon: "🐍", level: "Beginner", progress: 88 },
+            { name: "Django", icon: "🎯", level: "Basics", progress: 82 },
             { name: "Flask", icon: "🔥", level: "Intermediate", progress: 78 },
-            { name: "Database Design", icon: "🗄️", level: "Intermediate", progress: 75 }
+            { name: "Database Design", icon: "🗄️", level: "Beginner", progress: 75 }
         ]
     },
     {
@@ -50,19 +50,19 @@ const learningGoalsData = [
         title: "Deep Learning",
         icon: "🧠",
         description: "Exploring neural networks and advanced machine learning algorithms",
-        progress: 40
+        progress: 30
     },
     {
         title: "Data Science",
         icon: "📊",
         description: "Mastering pandas, matplotlib, and statistical analysis techniques",
-        progress: 60
+        progress: 10
     },
     {
         title: "Cloud Computing",
         icon: "☁️",
         description: "Learning AWS and cloud deployment for scalable AI applications",
-        progress: 25
+        progress: 0
     }
 ];
 
