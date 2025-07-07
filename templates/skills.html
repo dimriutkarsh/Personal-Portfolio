@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Skills{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Skills Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="page-title animate-text">Technical Skills</h1>
+        <p class="page-subtitle fade-in-up">Technologies I work with to build intelligent solutions</p>
+    </div>
+</section>
+
+<!-- Enhanced Skills Section with Modular Cards -->
+<section class="skills-section">
+    <div class="container">
+        <div class="skills-container" id="skills-container">
+            <!-- Skills will be dynamically loaded here -->
+        </div>
+    </div>
+</section>
+
+<!-- Learning Goals Section -->
+<section class="learning-goals">
+    <div class="container">
+        <h2 class="section-title">Currently Learning</h2>
+        <div class="goals-grid" id="goals-grid">
+            <!-- Goals will be dynamically loaded here -->
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title animate-text">
+                <span class="gradient-text">Building Intelligent</span>
+                <span class="gradient-text">Systems with AI</span>
+            </h1>
+            <p class="hero-description fade-in-up">
+                Aspiring AI/ML Engineer passionate about creating intelligent systems and leveraging AI to enhance productivity and design. I combine clean code with smart functionality to build efficient web and ML solutions.
+            </p>
+            <div class="hero-buttons fade-in-up">
+                <a href="{{ url_for('projects') }}" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <div class="btn-ripple"></div>
+                </a>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                    <div class="btn-ripple"></div>
+                </a>
+            </div>
+            <div class="hero-stats fade-in-up">
+                <div class="stat-item" data-count="8">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-item" data-count="15">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Learning</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="ai-globe">
+                <div class="globe-inner">
+                    <div class="orbit orbit-1">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="orbit orbit-2">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="orbit orbit-3">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="core">
+                        <div class="core-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Overview Section -->
+<section class="overview">
+    <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="overview-grid">
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">🤖</div>
+                <h3>AI/ML Development</h3>
+                <p>Building intelligent systems using Python, NumPy, and modern AI tools to solve real-world problems.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>Creating responsive, modern web applications using HTML, CSS, JavaScript, Django, and Flask.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-icon">⚡</div>
+                <h3>Automation & Optimization</h3>
+                <p>Leveraging AI to automate workflows, optimize processes, and enhance productivity.</p>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects Preview -->
+<section class="featured-projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="featured-grid">
+            <div class="featured-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="featured-image">
+                    <img src="https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=500" alt="AI Project">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="featured-content">
+                    <div class="project-badge">AI/ML</div>
+                    <h3>AI-Powered Task Manager</h3>
+                    <p>Django application with intelligent task prioritization using machine learning algorithms.</p>
+                    <div class="featured-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="featured-image">
+                    <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Web App">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="featured-content">
+                    <div class="project-badge">Full Stack</div>
+                    <h3>Interactive Analytics Dashboard</h3>
+                    <p>Real-time data visualization platform built with Flask and modern JavaScript.</p>
+                    <div class="featured-tech">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Charts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{{ url_for('projects') }}" class="btn btn-primary btn-large">
+                <span>View All Projects</span>
+                <div class="btn-ripple"></div>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}

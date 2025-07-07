@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Contact Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="page-title animate-text">Let's Connect</h1>
+        <p class="page-subtitle fade-in-up">Ready to collaborate on innovative projects or discuss opportunities</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-detailed">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-intro" data-aos="fade-right" data-aos-delay="100">
+                    <h2>Ready to Build Something Amazing?</h2>
+                    <p>I'm always excited to discuss new opportunities, collaborate on innovative projects, or simply connect with fellow developers and AI enthusiasts. Whether you have a project in mind, want to discuss AI/ML solutions, or just want to chat about technology, I'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="contact-method" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">utkarsh.dimri@example.com</span>
+                            <a href="mailto:utkarsh.dimri@example.com" class="contact-action">Send Email</a>
+                        </div>
+                    </div>
+                    <div class="contact-method" data-aos="fade-right" data-aos-delay="300">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">Connect with me professionally</span>
+                            <a href="https://linkedin.com/in/utkarsh-dimri" class="contact-action" target="_blank">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="contact-method" data-aos="fade-right" data-aos-delay="400">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">Check out my code repositories</span>
+                            <a href="https://github.com/utkarsh-dimri" class="contact-action" target="_blank">View Projects</a>
+                        </div>
+                    </div>
+                    <div class="contact-method" data-aos="fade-right" data-aos-delay="500">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Discord</span>
+                            <span class="contact-value">Let's chat about tech and AI</span>
+                            <a href="#" class="contact-action">Connect</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="availability" data-aos="fade-right" data-aos-delay="600">
+                    <h3>Current Availability</h3>
+                    <div class="availability-status">
+                        <div class="status-indicator available"></div>
+                        <span>Available for new projects and collaborations</span>
+                    </div>
+                    <p>I'm currently open to freelance projects, internship opportunities, and collaborative ventures in AI/ML and web development.</p>
+                </div>
+            </div>
+
+            <div class="contact-form-section" data-aos="fade-left" data-aos-delay="100">
+                <div class="form-header">
+                    <h3>Send Me a Message</h3>
+                    <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm" action="{{ url_for('contact') }}" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" class="form-input" required>
+                            <option value="">Select a subject</option>
+                            <option value="project">Project Collaboration</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="consultation">AI/ML Consultation</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" rows="6" placeholder="Tell me about your project, opportunity, or what you'd like to discuss..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            I'd like to receive updates about your latest projects and insights
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <h3>What services do you offer?</h3>
+                <p>I specialize in AI/ML development, web development (frontend and backend), automation solutions, and AI integration for existing applications.</p>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <h3>What's your typical project timeline?</h3>
+                <p>Project timelines vary based on complexity, but most web development projects take 2-4 weeks, while AI/ML projects may take 4-8 weeks depending on requirements.</p>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <h3>Do you work on remote projects?</h3>
+                <p>Yes! I'm comfortable working remotely and have experience collaborating with teams across different time zones using modern communication tools.</p>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <h3>What technologies do you work with?</h3>
+                <p>I work with Python, Django, Flask, HTML/CSS/JavaScript, NumPy, and various AI tools. I'm always learning new technologies to stay current.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

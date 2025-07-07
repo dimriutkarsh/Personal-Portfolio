@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Projects Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="page-title animate-text">My Projects</h1>
+        <p class="page-subtitle fade-in-up">A showcase of my development journey across different technologies</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-detailed">
+    <div class="container">
+        <div class="project-tabs">
+            <button class="tab-btn active" data-tab="all">All Projects</button>
+            <button class="tab-btn" data-tab="html-css-js">HTML/CSS/JS</button>
+            <button class="tab-btn" data-tab="django">Django</button>
+            <button class="tab-btn" data-tab="flask">Flask</button>
+            <button class="tab-btn" data-tab="python">Python/AI</button>
+        </div>
+        
+        <div class="projects-grid" id="projects-grid">
+            <!-- Projects will be dynamically loaded here -->
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

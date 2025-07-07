@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- About Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="page-title animate-text">About Me</h1>
+        <p class="page-subtitle fade-in-up">Passionate about AI, driven by innovation</p>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-detailed">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <div class="text-section" data-aos="fade-right" data-aos-delay="100">
+                    <h2>My Journey</h2>
+                    <p class="about-description">
+                        I'm Utkarsh Dimri, an aspiring AI/ML Engineer with a passion for building intelligent systems that solve real-world problems. My journey spans multiple programming languages and technologies, from web development fundamentals to advanced machine learning concepts.
+                    </p>
+                    <p class="about-description">
+                        I believe in the power of AI to transform how we work and create. Whether it's automating repetitive tasks, optimizing workflows, or crafting beautiful, efficient solutions, I'm constantly exploring how AI can enhance productivity and design.
+                    </p>
+                </div>
+
+                <div class="text-section" data-aos="fade-right" data-aos-delay="200">
+                    <h2>What Drives Me</h2>
+                    <p class="about-description">
+                        My portfolio reflects my evolution as a self-driven developer, from basic websites to full-stack applications, all while maintaining a focus on clean, functional design and smart implementation. I'm particularly fascinated by the intersection of AI and web development.
+                    </p>
+                    <p class="about-description">
+                        Every project I work on is an opportunity to learn something new and push the boundaries of what's possible with current technology. I actively experiment with AI tools to optimize my development process and create more intelligent applications.
+                    </p>
+                </div>
+
+                <div class="text-section" data-aos="fade-right" data-aos-delay="300">
+                    <h2>My Approach</h2>
+                    <p class="about-description">
+                        I combine technical expertise with creative problem-solving to build solutions that are not only functional but also elegant and user-friendly. My experience spans from frontend technologies like HTML, CSS, and JavaScript to backend frameworks like Django and Flask, with a growing focus on AI/ML implementations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-sidebar">
+                <div class="about-stats" data-aos="fade-left" data-aos-delay="100">
+                    <div class="stat-item" data-count="8">
+                        <div class="stat-number">0+</div>
+                        <div class="stat-label">Technologies Mastered</div>
+                    </div>
+                    <div class="stat-item" data-count="15">
+                        <div class="stat-number">0+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Always Learning</div>
+                    </div>
+                </div>
+
+                <div class="about-highlights" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Key Highlights</h3>
+                    <ul class="highlights-list">
+                        <li>Self-taught developer with strong foundation in multiple technologies</li>
+                        <li>Passionate about AI/ML and its practical applications</li>
+                        <li>Experience in both frontend and backend development</li>
+                        <li>Focus on clean, maintainable, and efficient code</li>
+                        <li>Continuous learner staying updated with latest tech trends</li>
+                    </ul>
+                </div>
+
+                <div class="about-interests" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Interests & Goals</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <div class="interest-icon">🤖</div>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon">🧠</div>
+                            <span>Artificial Intelligence</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon">📊</div>
+                            <span>Data Science</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon">🌐</div>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon">⚡</div>
+                            <span>Automation</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon">🎨</div>
+                            <span>UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="timeline-section">
+    <div class="container">
+        <h2 class="section-title">My Learning Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Started with Web Fundamentals</h3>
+                    <p>Began learning HTML, CSS, and JavaScript to build responsive websites and interactive user interfaces.</p>
+                    <span class="timeline-tech">HTML • CSS • JavaScript</span>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Explored Backend Development</h3>
+                    <p>Dove into Python programming and learned Django and Flask frameworks for full-stack development.</p>
+                    <span class="timeline-tech">Python • Django • Flask</span>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Discovered AI/ML Potential</h3>
+                    <p>Started exploring NumPy and AI tools, realizing the power of machine learning in solving complex problems.</p>
+                    <span class="timeline-tech">NumPy • AI Tools • Data Analysis</span>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Current Focus: AI/ML Engineering</h3>
+                    <p>Continuously learning advanced AI/ML concepts while building intelligent systems and applications.</p>
+                    <span class="timeline-tech">Machine Learning • Deep Learning • AI Integration</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
