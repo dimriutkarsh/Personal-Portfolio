@@ -69,8 +69,23 @@ const learningGoalsData = [
 // Projects Data
 const projectsData = [
     {
-        title: "Interactive Portfolio Website",
+        title: "VanRakshak",
         category: "html-css-js",
+        type: "Frontend",
+        description: "Vanrakshak is a group project created by me and my friends to detect forest fires",
+        image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=500",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Api-integration"],
+        features: [            
+            "detects forest fires through thermal mapping",
+            "uses google map model",
+            "can be used for promoting or doing plantation"
+        ],
+        liveDemo: "https://dimriutkarsh.github.io/VanRakshak/",
+        github: "https://github.com/dimriutkarsh/VanRakshak"
+    },
+    {
+        title: "Interactive Portfolio Website",
+        category: "flask",
         type: "Frontend",
         description: "A fully responsive portfolio website built with pure HTML, CSS, and JavaScript featuring smooth animations, modern design, and interactive elements.",
         image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=500",
@@ -81,24 +96,70 @@ const projectsData = [
             "Interactive JavaScript components",
             "Modern UI/UX design principles"
         ],
-        liveDemo: "#",
-        github: "#"
+        liveDemo: "http://personal-portfolio-production-cf5e.up.railway.app",
+        github: "https://github.com/dimriutkarsh/Personal-Portfolio"
     },
     {
-        title: "Business Landing Page",
+        title: "NotesNest",
         category: "html-css-js",
         type: "Frontend",
-        description: "Modern landing page with CSS Grid, Flexbox, and vanilla JavaScript interactions for optimal user experience and conversion optimization.",
+        description: "It’s a simple web app made for students where you can search for short notes, formulas, and even extract text from images using AI and OCR.",
         image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=500",
         technologies: ["HTML5", "CSS3", "JavaScript", "Forms"],
         features: [
-            "Conversion-optimized design",
-            "Interactive contact forms",
-            "Performance optimized",
-            "Cross-browser compatibility"
+            "Search short notes and important formulas instantly.",
+            "Voice input support for easy searching.",
+            "Extract text from images using Tesseract.js OCR.",
+            "Uses AI API to fetch quick and useful notes.",
+            "Clean, responsive, and lightweight web design."
         ],
-        liveDemo: "#",
-        github: "#"
+        liveDemo: "https://lnkd.in/dzEjDs9h",
+        github: "https://github.com/dimriutkarsh/NotesNest"
+    },
+    {
+        title: "Image-generating-chatbot",
+        category: "html-css-js",
+        type: "Frontend",
+        description: "This tool allows users to simply describe their imagination, generate unique AI-powered images",
+        image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=500",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Api-integration"],
+        features: [
+            " generate unique AI-powered images",
+            "can create your imagination into reality"
+        ],
+        liveDemo: "https://dimriutkarsh.github.io/image-generation-chatbot/",
+        github: "https://github.com/dimriutkarsh/image-generation-chatbot"
+    },
+    {
+        title: "DeepShiva-Chatbot",
+        category: "html-css-js",
+        type: "Frontend",
+        description: "AI-powered chatbot that’s simple, efficient, and multilingual — designed to answer your queries intelligently",
+        image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=500",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Api-integration"],
+        features: [
+             "Supports voice recognition",
+            "multilingual responses",
+            " Capable of real-time searches to provide updated answers",
+            " Works with a clean, dark mode interface 🌙"
+        ],
+        liveDemo: "https://lnkd.in/giaw7Yyx",
+        github: "https://github.com/dimriutkarsh/DeepShiva"
+    },
+    {
+        title: "Edu-Hub",
+        category: "html-css-js",
+        type: "Frontend",
+        description: "It’s a platform designed to help students easily access:📄 Previous Year Question Papers📝 Assignments📚 Notes (both regular and short notes)",
+        image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=500",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Api-integration"],
+        features: [            
+            "📄 Previous Year Question Papers",
+            "📝 Assignments",
+            "📚 Notes (both regular and short notes)"
+        ],
+        liveDemo: "https://lnkd.in/giaw7Yyx",
+        github: "https://github.com/dimriutkarsh/EduHub"
     },
     {
         title: "AI-Powered Task Management System",
@@ -133,20 +194,33 @@ const projectsData = [
         github: "#"
     },
     {
-        title: "RESTful API Service",
+        title: "VidSnap AI",
         category: "flask",
         type: "Backend",
-        description: "Lightweight Flask API with JWT authentication, data validation, comprehensive documentation, and rate limiting for secure and efficient data access.",
-        image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=500",
-        technologies: ["Flask", "Python", "JWT", "API"],
+        description: " a simple yet creative web app where users can generate video reels just by uploading images and adding text.",
+        image: "",
+        technologies: ["Flask", "Python", "css", "Html","Js"],
         features: [
-            "JWT-based authentication system",
-            "Input validation and sanitization",
-            "API documentation with Swagger",
-            "Rate limiting and security headers"
+            " generate video reels just by uploading images and adding text.",
+            " converts the text into speech and generates a short video reel.",
+            " used elevenlabs api key to change text to speech."
         ],
-        liveDemo: "#",
-        github: "#"
+            liveDemo: "",
+            github: "https://github.com/dimriutkarsh/VidSnap"},
+    {
+        title: "YogFit",
+        category: "html-css-js",
+        type: "frontend",
+        description: "a simple app which tells you about different exercises for different purposes also help you to track your fitness records and maintain it",
+        image: "",
+        technologies: [ "css", "Html","Js"],
+        features: [
+            "Information about yog/exercises",
+            "daily sheduled exercises",
+            "can track your records daily"
+        ],
+        liveDemo: "https://dimriutkarsh.github.io/ExerciseInfo/",
+        github: "https://github.com/dimriutkarsh/ExerciseInfo"
     },
     {
         title: "Interactive Analytics Dashboard",
